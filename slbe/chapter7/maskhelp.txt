@@ -1,0 +1,25 @@
+====================================
+==== Documentation -> Mask type ====
+====================================
+PI Controller
+
+
+===========================================
+==== Documentation -> Mask description ====
+===========================================
+This system implements the dynamics of a discrete PI controller with a rate limiter on the integrator.  
+You must specify the proportional gain (Kp), integral gain (Ki), and sample time (Ts) for the system.
+
+
+====================================
+==== Documentation -> Mask help ====
+====================================
+This system implements the dynamics of a discrete PI controller with a rate limiter on the integrator.
+The equations for the system are:  <br /><br />
+
+<b>Y(k) = Yp(k) + Yi(k)</b><br />
+Yp(k) = Kp*e(k)<br />
+Yi(k) = Yi(k-1) + Ki*Ts*e(k)<br />
+-1 < Yi(k) < 1<br /><br />
+
+Define values for Kp, Ki, and Ts for this system.
